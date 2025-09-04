@@ -64,3 +64,34 @@ a:visited {color: #80E060;}
 .nav-links a:hover {
     color: #E0E0E0;
 }
+
+input[type="text_box"], textarea {
+    background: #404040;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: 0 solid #000;
+    border-radius: 2px;
+    max-width: 160px;
+    padding: 2px 8px;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+button {
+    background: #606060;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: 0 solid #000;
+    max-width: 160px;
+    padding: 2px 8px;
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+.result {
+    font-size: 20px;
+}
+
+hr {
+    border: 2px solid #404040;
+}
