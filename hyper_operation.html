@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyper operations</title>
+    <title>Hyper operation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.svg">
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -18,10 +20,25 @@
     </ul>
     </nav>
 
-    <h1>Hyper operations</h1>
+    <h1>Hyper operation</h1>
     <h2>Definition</h2>
     <p>Hyper operations is an extension of addition, multiplication and exponentiation.</p>
-    <p>Hyper operations is denoted with the ↑ symbol.</p>
-    <p>For each level of operation, a ↑ is added, starting with exponentiation which is ↑.</p>
+    <p>Each level of operation is the repeatition of the previous level.</p>
+    <p>The level after exponentiation is called tetration.</p>
+
+    <h2>Notation</h2>
+    <p>These operations are denoted with the ↑ symbol.</p>
+    <p>A single ↑ represent exponentiation.</p>
+    <p>Two arrows ↑↑ represent tetration.</p>
+    <p>For each level of operation, one more ↑ is added.</p>
+    <p>If there are many arrows, \(↑^n\) can be used to describe n arrows in a row.</p>
+
+    <h2>Properties</h2>
+    <ul>
+    <li>\(2 ↑^n 2 = 4\)</li>
+    <li>\(a ↑^n 1 = a\)</li>
+    <li>\(a ↑^n 0 = a\)</li>
+    <li>\(1 ↑^n b = 1\)</li>
+    </ul>
 </body>
 </html>

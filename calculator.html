@@ -7,6 +7,11 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.svg">
+
+    <script src="add.js"></script>
+    <script src="subtract.js"></script>
+    <script src="multiply.js"></script>
+    <script src="divide.js"></script>
 </head>
 
 <body>
@@ -30,17 +35,7 @@
     document.getElementById("add_btn").addEventListener("click", function() {
         let text_a = document.getElementById("add_box_a").value;
         let text_b = document.getElementById("add_box_b").value;
-        let a = Number(text_a);
-        let b = Number(text_b);
-
-        let text
-        if (text_a == "" || text_b == "" || isNaN(a) || isNaN(b)) {
-            text = "Invalid entry. Please enter two numbers."
-        } else {
-            text = text_a + " + " + text_b + " = " + String(a + b);
-        }
-
-        document.getElementById("add_result").textContent = text;
+        document.getElementById("add_result").innerHTML = print_add(text_a, text_b);
     });
     </script>
     
@@ -57,17 +52,7 @@
     document.getElementById("sub_btn").addEventListener("click", function() {
         let text_a = document.getElementById("sub_box_a").value;
         let text_b = document.getElementById("sub_box_b").value;
-        let a = Number(text_a);
-        let b = Number(text_b);
-
-        let text
-        if (text_a == "" || text_b == "" || isNaN(a) || isNaN(b)) {
-            text = "Invalid entry. Please enter two numbers."
-        } else {
-            text = text_a + " - " + text_b + " = " + String(a - b);
-        }
-
-        document.getElementById("sub_result").textContent = text;
+        document.getElementById("sub_result").innerHTML = print_subtract(text_a, text_b);
     });
     </script>
 
@@ -84,17 +69,7 @@
     document.getElementById("mul_btn").addEventListener("click", function() {
         let text_a = document.getElementById("mul_box_a").value;
         let text_b = document.getElementById("mul_box_b").value;
-        let a = Number(text_a);
-        let b = Number(text_b);
-
-        let text
-        if (text_a == "" || text_b == "" || isNaN(a) || isNaN(b)) {
-            text = "Invalid entry. Please enter two numbers."
-        } else {
-            text = text_a + " × " + text_b + " = " + String(a * b);
-        }
-
-        document.getElementById("mul_result").textContent = text;
+        document.getElementById("mul_result").innerHTML = print_multiply(text_a, text_b);
     });
     </script>
 
@@ -111,17 +86,7 @@
     document.getElementById("div_btn").addEventListener("click", function() {
         let text_a = document.getElementById("div_box_a").value;
         let text_b = document.getElementById("div_box_b").value;
-        let a = Number(text_a);
-        let b = Number(text_b);
-
-        let text
-        if (text_a == "" || text_b == "" || isNaN(a) || isNaN(b)) {
-            text = "Invalid entry. Please enter two numbers."
-        } else {
-            text = text_a + " ÷ " + text_b + " = " + String(a / b);
-        }
-
-        document.getElementById("div_result").textContent = text;
+        document.getElementById("div_result").innerHTML = print_divide(text_a, text_b);
     });
     </script>
 </body>
