@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisors list</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.svg">
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+    <script src="../scripts/divisors_list.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+    <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../pages.html">Pages</a></li>
+    <li><a href="../tools.html">Tools</a></li>
+    </ul>
+    </nav>
+
+    <h1>Divisors list</h1>
+    <input type="text_box" id="find_div_box" placeholder="Enter a number">
+
+    <button id="find_div_btn_a">Find divisors</button>
+    <p class="result" id="find_div_result"></br></p>
+
+    <script>
+            function renderMath() {
+      return MathJax.typesetPromise().catch((err) => console.error("MathJax error:", err));
+    }
+
+    document.getElementById("find_div_btn_a").addEventListener("click", function() {
+        let text_a = document.getElementById("find_div_box").value;
+        document.getElementById("find_div_result").innerHTML = print_div_list(text_a);
+        MathJax.typeset();
+    });
+    </script>
+</body>
+</html>

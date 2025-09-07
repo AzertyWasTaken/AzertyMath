@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../favicon.svg">
 
-    <script src="add.js"></script>
-    <script src="subtract.js"></script>
-    <script src="multiply.js"></script>
-    <script src="divide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+    <script src="../scripts/add.js"></script>
+    <script src="../scripts/subtract.js"></script>
+    <script src="../scripts/multiply.js"></script>
+    <script src="../scripts/divide.js"></script>
 </head>
 
 <body>
@@ -35,6 +37,7 @@
         let text_a = document.getElementById("add_box_a").value;
         let text_b = document.getElementById("add_box_b").value;
         document.getElementById("add_result").innerHTML = print_add(text_a, text_b);
+        MathJax.typeset();
     });
     </script>
     
@@ -52,6 +55,7 @@
         let text_a = document.getElementById("sub_box_a").value;
         let text_b = document.getElementById("sub_box_b").value;
         document.getElementById("sub_result").innerHTML = print_subtract(text_a, text_b);
+        MathJax.typeset();
     });
     </script>
 
@@ -69,6 +73,7 @@
         let text_a = document.getElementById("mul_box_a").value;
         let text_b = document.getElementById("mul_box_b").value;
         document.getElementById("mul_result").innerHTML = print_multiply(text_a, text_b);
+        MathJax.typeset();
     });
     </script>
 
@@ -79,13 +84,14 @@
     <input type="text_box" id="div_box_b" placeholder="Enter a number">
 
     <button id="div_btn">Divide</button>
-    <p class="result" id="div_result"></p>
+    <p class="result" id="div_result"></br></p>
 
     <script>
     document.getElementById("div_btn").addEventListener("click", function() {
         let text_a = document.getElementById("div_box_a").value;
         let text_b = document.getElementById("div_box_b").value;
         document.getElementById("div_result").innerHTML = print_divide(text_a, text_b);
+        MathJax.typeset();
     });
     </script>
 </body>

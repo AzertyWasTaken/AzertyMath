@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/x-icon" href="../favicon.svg">
 
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -21,7 +21,22 @@
 
     <h1>Prime number</h1>
     <h2>Definition</h2>
-    <p>A prime numbers is an integers that have exactly \(2\) divisors.</p>
-    <p>The \(10\) first prime numbers are \(2, 3, 5, 7, 11, 13, 17, 23, 29, 31 \).</p>
+    <p>A prime number is an integer that have exactly \(2\) divisors.</p>
+    <p>Prime numbers cannot be written as the product of two smaller positive integers.</p>
+    <p>Numbers that are not prime are called composite numbers.</p>
+    <p>The first ten prime numbers are \(2, 3, 5, 7, 11, 13, 17, 23, 29, 31\).</p>
+
+    <h2>Properties</h2>
+    <ul>
+    <li>\(2\) is the only even prime number.</li>
+    <li>There exist infinitely many primes.</li>
+    </ul>
+
+    <h3>Proof</h3>
+    <p>Assume there are only finitely many primes.</p>
+    <p>Let \(P\) be a list of these prime numbers.</p>
+    <p>Let \(n\) be the product of each number in \(P\) plus \(1\).</p>
+    <p>\(n\) is not divisible by any number in \(P\) because their division have a remainder of \(1\).</p>
+    <p>So \(n\) is either a prime number itself or a multiple of a prime number that do not appear in \(P\).</p>
 </body>
 </html>
